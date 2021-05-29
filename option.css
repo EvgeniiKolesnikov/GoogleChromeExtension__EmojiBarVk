@@ -1,0 +1,301 @@
+body {
+    background: #f7f7f7;
+}
+
+img.iccon {
+	margin-bottom:-2px;
+	margin-left: 5px;
+}
+
+img.img_smile {
+	margin-bottom: 2px;
+    margin-left: 1px;
+}
+
+p.p1 {
+	font-size: 14px;
+    margin: 0px 40px 0px;
+    text-align: justify;
+}
+
+p.p2 {
+    font-size: 14px;
+    margin: 4px 0px 4px;
+    text-align: center;
+}
+
+i.itext {
+	color: #8b8e91;
+}
+
+a.news {
+	color: #0093ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+b.news {
+	color: #f50707;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+b.b_green_class {
+	color: #28b706;
+}
+
+b.b_blue_class {
+	color: #3a86d8;
+}
+
+#showBar + label  {
+	color: #c78811;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#showBar:checked + label  {
+	color: #ec4f4f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#showIdBar2 + label  {
+    color: #c78811;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#showIdBar2:checked + label  {
+	color: #3a86d8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#showIdBar1 + label  {
+    color: #c78811;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#showIdBar1:checked + label  {
+	color: #28b706;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.input1::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	background-image: url(http://vk.com/images/emoji/D83DDE0A_2x.png); 
+	background-repeat: no-repeat, repeat-x; 
+	background-size: contain; 
+	background-position: right;
+	color:#e3e3e3;
+}
+.input1:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   background-image: url(http://vk.com/images/emoji/D83DDE0A_2x.png); 
+	background-repeat: no-repeat, repeat-x; 
+	background-size: contain; 
+	background-position: right;
+	color:#e3e3e3;
+}
+.input1::-moz-placeholder { /* Mozilla Firefox 19+ */
+   background-image: url(http://vk.com/images/emoji/D83DDE0A_2x.png); 
+	background-repeat: no-repeat, repeat-x; 
+	background-size: contain; 
+	background-position: right;
+	color:#e3e3e3;
+}
+.input1:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   background-image: url(http://vk.com/images/emoji/D83DDE0A_2x.png); 
+	background-repeat: no-repeat, repeat-x; 
+	background-size: contain; 
+	background-position: right;
+	color:#e3e3e3;
+}
+.input1::-ms-input-placeholder { /* Microsoft Edge */
+   background-image: url(http://vk.com/images/emoji/D83DDE0A_2x.png); 
+	background-repeat: no-repeat, repeat-x; 
+	background-size: contain; 
+	background-position: right;
+	color:#e3e3e3;
+}
+.input1 {
+	font-size: 14px;
+    margin-top: 0;
+    border: 1px solid #e2effb;
+    width: 210px;
+}
+
+
+.content {
+	width: 700px;    
+	//position: fixed;   
+	top: 57px; 
+	//display: block;
+	align: center;
+	margin:10px auto;
+
+	background-color: white;
+    border: 1px solid #e3e3e3;
+}
+
+
+.table_col {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  //width: 660px;
+  background: white;
+  //text-align: left;
+  border-collapse: collapse;
+  color: #3E4347;
+  margin:10px auto;
+}
+.table_col th:first-child, .table_col td:first-child {
+	color: #26292b;
+}
+.table_col th {
+	font-weight: normal;
+	border-bottom: 2px solid #F5E1A6;
+	border-right: 8px solid white;
+	border-left: 8px solid white;
+	padding: 5px 13px;
+    text-align: center;
+}
+.table_col td {
+	border-right: 8px solid white;
+	border-left: 8px solid white;
+	padding: 1px 40px;
+	color: #8b8e91;
+}
+th:first-child {
+	background: #e4f2ff;
+}
+
+
+.smileexample {
+    display: block; /* Блочный элемент (для старых браузеров) */
+
+    background-color: #fafbfc;
+    width: 410px;
+    text-align: center;
+    border-right: 1px solid #e3e4e8;
+    border-left: 1px solid #e3e4e8;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: 74px;
+    padding-left: 70px;
+    padding-right: 70px;
+	
+	
+}
+
+h1 {
+    //font-family: Courier New, sans-serif;
+	font: normal 16px 'PT Sans Caption', sans-serif;
+	font-size: 17px;
+    margin: 10px 10px 16px;
+}
+h2 {
+    //font-family: Courier New, sans-serif;
+	font: normal 16px 'PT Sans Caption', sans-serif;
+	font-size: 17px;
+    margin: 10px 10px 0px;
+}
+h8 {
+    //font-family: Courier New, sans-serif;
+	font: normal 16px 'PT Sans Caption', sans-serif;
+	font-size: 17px;
+    margin: 10px 10px 0px;
+}
+
+FIELDSET {
+	margin: 0px 10px 20px 10px;
+	border: 1px solid #e3e4e8;
+}
+
+
+.content-headline {
+	text-align: center;
+}
+
+button.button15 {
+    font-family: verdana;
+    color: rgb(95, 105, 109);
+    user-select: none;
+    outline: none;
+    border: 1px solid rgb(183, 182, 181);
+    border-radius: 5px;
+    background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+    transition: all .218s ease 0s;
+    display: block;
+    width: 220px;
+    margin: 15px auto;
+    font-size: 16px;
+    height: 32px;
+    margin-bottom: 15px;
+	cursor: pointer
+}
+button.button15:hover {
+  color: rgb(24,24,24);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none;
+}
+button.button15:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+.savemessage {
+	margin: 15px auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+.smile_bar {
+    display: inline-block;
+    position: relative;
+    padding: 3px 4.9px;
+    margin-right: 1px;
+
+    width: 16px;
+    height: 16px;
+}
+
+.smile_table {
+	text-align: center;
+    width: 16px;
+    height: 16px;
+	margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+	vertical-align: middle;
+
+}
+
+.fig_smilebar {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0px; /* Отступ снизу */
+}
+.fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0px; /* Отступ снизу */
+	height: 20px;
+}
+.fig2 {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0px; /* Отступ снизу */
+	height: 20px;
+    color: cornflowerblue;
+    font-weight: bold;
+}

@@ -1,0 +1,1109 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>Настройки EmojiBar VK</title>
+<link rel="stylesheet" href="option.css">
+</head>
+
+<body>
+<p align="justify">
+<div id="card" style="margin: 10px auto; text-align: center;"><iframe src="https://money.yandex.ru/embed/donate.xml?account=410014128723888&amp;quickpay=donate&amp;payment-type-choice=on&amp;mobile-payment-type-choice=on&amp;default-sum=100&amp;targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C+%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0&amp;project-name=&amp;project-site=&amp;button-text=05&amp;successURL=" width="508" height="64" frameborder="0" scrolling="no"></iframe></div>
+</p>
+<div class="content">
+<h2 class="content-headline"> Настройки "EmojiBar Vk" <img src="1_main.png" width="16" alt="Фотография" class="iccon"> </h2>
+ 
+<fieldset>
+    <legend>Инструкция:</legend>
+    <label>
+		<p align="justify">
+		1. Выберите нужное <b>количество</b> смайликов.	
+		<br>
+		2. В таблице ниже в первом столбце <b>вставьте/напишите коды</b> нужным Вам смайликов. 
+		Например, вставив код <b>f09f988a</b>, вы получите смайлик <b>"Улыбка"</b>. 
+		Вы сразу увидите, какой получится смайлик, и правильно ли Вы написали код.
+		<b>Коды наиболее популярных смайликов приведены в нижней части страницы. </b><a href="#catalog_icon" class="news">Подробнее . . .</a>
+		<br>
+		<i>• Если Вы хотите более качественные смайлики (для 4К мониторов), то добавьте к каждому коду "_2x". 
+		<br>• Например, вместо f09f988a, нужно написать f09f988a_2x. Но обычно это не нужно и разницы Вы не увидите.</i>
+		<br>
+		3. Нажмите кнопку <b>"СОХРАНИТЬ"</b>, чтобы сохранить Ваш вариант панели смайликов.
+		<br>
+		4. <b>Обновите страницу ВК</b>, чтобы увидеть изменения.
+		<br><br>
+		<b class="news">[ ! ] Обновление </b> — Добавлена возможность печати смайликов с клавиатуры! Внизу страницы.
+		<a href="#new_options" class="news">Подробнее . . .</a>
+		<br>
+		<b class="news">[ ! ] </b> Добавлена возможность спрятать панель смайликов. Внизу страницы. 
+		<br>
+		<b class="news">[ ! ] </b> Добавлена умная иконка. <a href="#smart_icon" class="news">Подробнее . . .</a>
+		<br>
+		<b class="news">[ ! ] </b> Количество смайликов в панели увеличено с 15 до 30.
+		</p>
+	</label> 
+</fieldset>
+
+<h1 class="content-headline">Количество смайликов:
+<select id="xsmile" style="background-color: #e4f2ff; border: 0px; font-size: 17px;">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ <option value="9">9</option>
+ <option value="10">10</option>
+ <option value="11">11</option>
+ <option value="12">12</option>
+ <option value="13">13</option>
+ <option value="14">14</option>
+ <option value="15">15</option>
+ <option value="16">16</option>
+ <option value="17">17</option>
+ <option value="18">18</option>
+ <option value="19">19</option>
+ <option value="10">20</option>
+ <option value="21">21</option>
+ <option value="22">22</option>
+ <option value="23">23</option>
+ <option value="24">24</option>
+ <option value="25">25</option>
+ <option value="26">26</option>
+ <option value="27">27</option>
+ <option value="28">28</option>
+ <option value="29">29</option>
+ <option value="30">30</option>
+</select>
+</h1>
+
+<table class="table_col" id="table_id">
+	<colgroup>
+		<col style="background:#f0f8ff;">
+	</colgroup>
+	<tr>
+		<th>Код</th>
+		<th>Смайлик</th>
+		<th>Номер</th>
+    </tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+    </tr>
+	
+	
+	<tr>
+		<td><input type="text" id="smile1" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f988a"></td>
+		<td><p id="smile1img" class="fig"></p></td>
+		<td><p class="fig2">1</p1</td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile2" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f988c"></td>
+		<td><p id="smile2img" class="fig"></p></td>
+		<td><p class="fig2">2</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile3" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f9889"></td>
+		<td><p id="smile3img" class="fig"></p></td>
+		<td><p class="fig2">3</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile4" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f9884"></td>
+		<td><p id="smile4img" class="fig"></p></td>
+		<td><p class="fig2">4</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile5" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09fa4a3"></td>
+		<td><p id="smile5img" class="fig"></p></td>
+		<td><p class="fig2">5</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile6" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f98b3"></td>
+		<td><p id="smile6img" class="fig"></p></td>
+		<td><p class="fig2">6</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile7" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f989a"></td>
+		<td><p id="smile7img" class="fig"></p></td>
+		<td><p class="fig2">7</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile8" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f988d"></td>
+		<td><p id="smile8img" class="fig"></p></td>
+		<td><p class="fig2">8</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile9" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f988e"></td>
+		<td><p id="smile9img" class="fig"></p></td>
+		<td><p class="fig2">9</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile10" class="input1"  maxlength="30" placeholder ="f09f988a" value="e298ba"></td>
+		<td><p id="smile10img" class="fig"></p></td>
+		<td><p class="fig">10</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile11" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09f988f"></td>
+		<td><p id="smile11img" class="fig"></p></td>
+		<td><p class="fig">11</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile12" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09f989f"></td>
+		<td><p id="smile12img" class="fig"></p></td>
+		<td><p class="fig">12</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile13" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09f918df09f8fbb"></td>
+		<td><p id="smile13img" class="fig"></p></td>
+		<td><p class="fig">13</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile14" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09fa497"></td>
+		<td><p id="smile14img" class="fig"></p></td>
+		<td><p class="fig">14</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile15" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09f9883"></td>
+		<td><p id="smile15img" class="fig"></p></td>
+		<td><p class="fig">15</p></td>
+    </tr>
+	
+	
+	
+	<tr style="display: none">
+		<td><input type="text" id="smile16" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8e81"></td>
+		<td><p id="smile16img" class="fig"></p></td>
+		<td><p class="fig">16</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile17" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8e89"></td>
+		<td><p id="smile17img" class="fig"></p></td>
+		<td><p class="fig">17</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile18" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8e8a"></td>
+		<td><p id="smile18img" class="fig"></p></td>
+		<td><p class="fig">18</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile19" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8e88"></td>
+		<td><p id="smile19img" class="fig"></p></td>
+		<td><p class="fig">19</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile20" class="input1"  maxlength="30" placeholder ="f09f988a" value="f09f8e82"></td>
+		<td><p id="smile20img" class="fig"></p></td>
+		<td><p class="fig">20</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile21" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8db0"></td>
+		<td><p id="smile21img" class="fig"></p></td>
+		<td><p class="fig">21</p1</td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile22" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f9290"></td>
+		<td><p id="smile22img" class="fig"></p></td>
+		<td><p class="fig">22</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile23" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8cb9"></td>
+		<td><p id="smile23img" class="fig"></p></td>
+		<td><p class="fig">23</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile24" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8cba"></td>
+		<td><p id="smile24img" class="fig"></p></td>
+		<td><p class="fig">24</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile25" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f9296"></td>
+		<td><p id="smile25img" class="fig"></p></td>
+		<td><p class="fig">25</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile26" class="input1"  maxlength="30"  placeholder ="f09f988a" value="e29895"></td>
+		<td><p id="smile26img" class="fig"></p></td>
+		<td><p class="fig">26</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile27" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f8d94"></td>
+		<td><p id="smile27img" class="fig"></p></td>
+		<td><p class="fig">27</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile28" class="input1"  maxlength="30"  placeholder ="f09f988a" value="f09f94a5"></td>
+		<td><p id="smile28img" class="fig"></p></td>
+		<td><p class="fig">28</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile29" class="input1"  maxlength="30"  placeholder ="f09f988a" value="e29880"></td>
+		<td><p id="smile29img" class="fig"></p></td>
+		<td><p class="fig">29</p></td>
+    </tr>
+	<tr style="display: none">
+		<td><input type="text" id="smile30" class="input1"  maxlength="30" placeholder ="f09f988a" value="e29d84"></td>
+		<td><p id="smile30img" class="fig"></p></td>
+		<td><p class="fig">30</p></td>
+    </tr>
+	
+
+	
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+    </tr>
+</table>
+
+
+<p class="fig_smilebar"><img src="smilebar1.png" width="552" alt="Фотография"></p>
+<div class="smileexample" id="smilebar"></div>
+<p class="fig_smilebar"><img src="smilebar2.png" width="552" alt="Фотография"></p>
+<button id="save" class="button15">СОХРАНИТЬ</button>
+<div id="status" class="savemessage"></div>
+</div>
+
+
+<div id="body_page" class="content">
+<a id="catalog_icon"></a>
+<br>
+<p class="fig">Коды основных смайликов Вконтакте</p>
+
+
+<table class="table_col">
+	<colgroup>
+		<col style="background:#f0f8ff;">
+	</colgroup>
+	<tr>
+		<th>Код</th>
+		<th>Смайлик</th>
+		<th>Название</th>
+    </tr>
+	<tr>
+		<td>f09f9884</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE04.png" align="center"></td>
+		<td>Счастливая улыбка</td>
+    </tr>
+	<tr>
+		<td>f09f9881</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE01.png" align="center"></td>
+		<td>Смешно</td>
+    </tr>
+	<tr>
+		<td>f09f988a</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0A.png" align="center"></td>
+		<td>Улыбка</td>
+    </tr>
+	<tr>
+		<td>f09f9883</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE03.png" align="center"></td>
+		<td>Восхищение</td>
+    </tr>
+	<tr>
+		<td>f09fa4a3</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD23.png" align="center"></td>
+		<td>Катается по полу от смеха</td>
+    </tr>
+	<tr>
+		<td>f09f9886</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE06.png" align="center"></td>
+		<td>Насмешка</td>
+    </tr>
+	<tr>
+		<td>f09f9889</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE09.png" align="center"></td>
+		<td>Подмигивание</td>
+    </tr>
+	<tr>
+		<td>f09f989c</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1C.png" align="center"></td>
+		<td>Дразнится</td>
+    </tr>
+	<tr>
+		<td>f09f988b</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0B.png" align="center"></td>
+		<td>Игривая улыбка </td>
+    </tr>
+	<tr>
+		<td>f09fa497</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD17.png" align="center"></td>
+		<td>Обнимашки</td>
+    </tr>
+	<tr>
+		<td>f09f988d</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0D.png" align="center"></td>
+		<td>Влюблён</td>
+    </tr>
+	<tr>
+		<td>f09f988e	</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0E.png" align="center"></td>
+		<td>Крутизна</td>
+    </tr>
+	<tr>
+		<td>f09f9892</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE12.png" align="center"></td>
+		<td>Уныние</td>
+    </tr>
+	<tr>
+		<td>f09f988f</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0F.png" align="center"></td>
+		<td>Ухмылка</td>
+    </tr>
+	<tr>
+		<td>f09f9982</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE42.png" align="center"></td>
+		<td>Немного улыбается</td>
+    </tr>
+	<tr>
+		<td>f09f9983</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE43.png" align="center"></td>
+		<td>Перевёрнутая улыбка</td>
+    </tr>
+	<tr>
+		<td>f09f9894</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE14.png" align="center"></td>
+		<td>Сожаление</td>
+    </tr>
+	<tr>
+		<td>f09f98a2</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE22.png" align="center"></td>
+		<td>Слёзы печали</td>
+    </tr>
+	<tr>
+		<td>f09f98ad</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2D.png" align="center"></td>
+		<td>Рыдает</td>
+    </tr>
+	<tr>
+		<td>f09f98a9</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE29.png" align="center"></td>
+		<td>Отобрали конфету</td>
+    </tr>
+	<tr>
+		<td>f09f98a8</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE28.png" align="center"></td>
+		<td>Испуган</td>
+    </tr>
+	<tr>
+		<td>f09f9890</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE10.png" align="center"></td>
+		<td>Нейтральный</td>
+    </tr>
+	<tr>
+		<td>f09f988c</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE0C.png" align="center"></td>
+		<td>Довольная улыбка</td>
+    </tr>
+	<tr>
+		<td>f09fa4a4</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD24.png" align="center"></td>
+		<td>Слюнявый</td>
+    </tr>
+	<tr>
+		<td>f09f9887</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE07.png" align="center"></td>
+		<td>Святой</td>
+    </tr>
+	<tr>
+		<td>f09f98b0</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE30.png" align="center"></td>
+		<td>Холодный пот</td>
+    </tr>
+	<tr>
+		<td>f09fa4a7</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD27.png" align="center"></td>
+		<td>Чихает</td>
+    </tr>
+	<tr>
+		<td>f09f98b2</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE33.png" align="center"></td>
+		<td>Удивлён</td>
+    </tr>
+	<tr>
+		<td>f09fa4a2</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD22.png" align="center"></td>
+		<td>Подташнивает</td>
+    </tr>
+	<tr>
+		<td>f09f98b3</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE32.png" align="center"></td>
+		<td>Удивление</td>
+    </tr>
+	<tr>
+		<td>f09f98b7</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE37.png" align="center"></td>
+		<td>Болеет</td>
+    </tr>
+	<tr>
+		<td>f09f9882</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE02.png" align="center"></td>
+		<td>Слёзы радости</td>
+    </tr>
+	<tr>
+		<td>e29da4</td>
+		<td><img src="https://vk.com/images/emoji/2764.png" align="center"></td>
+		<td>Сердце</td>
+    </tr>
+		<tr>
+		<td>f09f928b</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC8B.png" align="center"></td>
+		<td>Губы</td>
+    </tr>
+	<tr>
+		<td>f09f989a</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1A.png" align="center"></td>
+		<td>Поцелуй</td>
+    </tr>
+	<tr>
+		<td>f09f9895</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE15.png" align="center"></td>
+		<td>Растерянный </td>
+    </tr>
+	<tr>
+		<td>f09f98af</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2F.png" align="center"></td>
+		<td>Полное недоумение</td>
+    </tr>
+	<tr>
+		<td>f09f98a6</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE26.png" align="center"></td>
+		<td>Хмурый</td>
+    </tr>
+	<tr>
+		<td>f09f9984</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE44.png" align="center"></td>
+		<td>Закатил глаза</td>
+    </tr>
+	<tr>
+		<td>f09fa494</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD14.png" align="center"></td>
+		<td>Задумался</td>
+    </tr>
+	<tr>
+		<td>f09f98a0</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE20.png" align="center"></td>
+		<td>Злой</td>
+    </tr>
+	<tr>
+		<td>f09f98a1</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE21.png" align="center"></td>
+		<td>Очень злой</td>
+    </tr>
+	<tr>
+		<td>f09f989d</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1D.png" align="center"></td>
+		<td>Бяка</td>
+    </tr>
+	<tr>
+		<td>f09f98aa</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2A.png" align="center"></td>
+		<td>Сопит</td>
+    </tr>
+	<tr>
+		<td>f09f98b4</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE34.png" align="center"></td>
+		<td>Спит</td>
+    </tr>
+
+	<tr>
+		<td>f09f9898</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE18.png" align="center"></td>
+		<td>Воздушный поцелуй</td>
+    </tr>
+		<tr>
+		<td>f09f9897</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE17.png" align="center"></td>
+		<td>Формальный поцелуй</td>
+    </tr>
+	<tr>
+		<td>f09f9899</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE19.png" align="center"></td>
+		<td>Приветственный поцелуй</td>
+    </tr>
+	<tr>
+		<td>f09f989f</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1F.png" align="center"></td>
+		<td>Печалька</td>
+    </tr>
+	<tr>
+		<td>f09f9981</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE41.png" align="center"></td>
+		<td>Хмурый</td>
+    </tr>
+		<tr>
+		<td>e298b9</td>
+		<td><img src="https://vk.com/images/emoji/2639.png" align="center"></td>
+		<td>Нахмурился</td>
+    </tr>
+	<tr>
+		<td>f09f98ac</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2C.png" align="center"></td>
+		<td>Стиснув зубы</td>
+    </tr>	
+	<tr>
+		<td>f09f98b6</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE36.png" align="center"></td>
+		<td>Рот исчез</td>
+    </tr>
+	<tr>
+		<td>f09fa490</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD10.png" align="center"></td>
+		<td>Рот на замок</td>
+    </tr>
+	<tr>
+		<td>f09f98ab</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2B.png" align="center"></td>
+		<td>Пропал интернет</td>
+    </tr>
+	<tr>
+		<td>e298ba</td>
+		<td><img src="https://vk.com/images/emoji/263A.png" align="center"></td>
+		<td>Скромная улыбка</td>
+    </tr>
+	<tr>
+		<td>f09f9880</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE00.png" align="center"></td>
+		<td>Ухмыляющееся лицо </td>
+    </tr>
+	<tr>
+		<td>f09f98a5</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE25.png" align="center"></td>
+		<td>Слегка разочарован</td>
+    </tr>
+	<tr>
+		<td>f09f989b</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1B.png" align="center"></td>
+		<td>Показывает язык</td>
+    </tr>
+	<tr>
+		<td>f09f9896</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE16.png" align="center"></td>
+		<td>Соседи делают ремонт</td>
+    </tr>
+	<tr>
+		<td>f09f98a4</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE24.png" align="center"></td>
+		<td>Немножко бешеный</td>
+    </tr>	
+	<tr>
+		<td>f09f98a3</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE23.png" align="center"></td>
+		<td>В забитой маршрутке</td>
+    </tr>
+	<tr>
+		<td>f09f98a7</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE27.png" align="center"></td>
+		<td>Страдает</td>
+    </tr>
+	<tr>
+		<td>f09f9891</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE11.png" align="center"></td>
+		<td>Недоверие</td>
+    </tr>
+	<tr>
+		<td>f09f9885</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE05.png" align="center"></td>
+		<td>Радость в холодном поту</td>
+    </tr>
+	<tr>
+		<td>f09f98ae</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE2E.png" align="center"></td>
+		<td>Недоумение</td>
+    </tr>
+	<tr>
+		<td>f09f989e</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE1E.png" align="center"></td>
+		<td>Разочарование</td>
+    </tr>
+	<tr>
+		<td>f09f9893</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE13.png" align="center"></td>
+		<td>Грусть в холодном поту</td>
+    </tr>
+	<tr>
+		<td>f09f98b1</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE31.png" align="center"></td>
+		<td>Кричит от страха</td>
+    </tr>
+	<tr>
+		<td>f09fa493</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD13.png" align="center"></td>
+		<td>В крутых очках</td>
+    </tr>
+	<tr>
+		<td>f09fa491</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD11.png" align="center"></td>
+		<td>Денежный</td>
+    </tr>
+	
+	<tr>
+		<td>f09fa492</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD12.png" align="center"></td>
+		<td>С термометром</td>
+    </tr>
+	<tr>
+		<td>f09fa495</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD15.png" align="center"></td>
+		<td>С перебинтованной головой</td>
+    </tr>
+	<tr>
+		<td>f09fa4a5</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD25.png" align="center"></td>
+		<td>Буратино</td>
+    </tr>
+	<tr>
+		<td>f09fa4a0</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD20.png" align="center"></td>
+		<td>Ковбой</td>
+    </tr>
+	<tr>
+		<td>f09f9888</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE08.png" align="center"></td>
+		<td>Довольный чёрт</td>
+    </tr>
+	<tr>
+		<td>f09f91bf</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC7F.png" align="center"></td>
+		<td>Злой чёрт</td>
+    </tr>
+	<tr>
+		<td>f09f91bd</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC7D.png" align="center"></td>
+		<td>Пришелец</td>
+    </tr>
+	<tr>
+		<td>f09f91bb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC7B.png" align="center"></td>
+		<td>Призрак</td>
+    </tr>
+	
+
+	
+	<tr>
+		<td>f09f98b8</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE38.png" align="center"></td>
+		<td>Кот улыбается</td>
+    </tr>
+	<tr>
+		<td>f09f98b9</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE39.png" align="center"></td>
+		<td>Кот смеётся</td>
+    </tr>
+	<tr>
+		<td>f09f98bc</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3C.png" align="center"></td>
+		<td>Кот ухмыляется</td>
+    </tr>
+	<tr>
+		<td>f09f98bd</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3D.png" align="center"></td>
+		<td>Кот целует</td>
+    </tr>
+		<tr>
+		<td>f09f98be</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3E.png" align="center"></td>
+		<td>Кот рассержен</td>
+    </tr>
+	<tr>
+		<td>f09f98bf</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3F.png" align="center"></td>
+		<td>Кот обижен</td>
+    </tr>
+	<tr>
+		<td>f09f98bb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3B.png" align="center"></td>
+		<td>Кот влюблён</td>
+    </tr>
+		<tr>
+		<td>f09f9980</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE40.png" align="center"></td>
+		<td>Кот боится</td>
+    </tr>
+	<tr>
+		<td>f09f98ba</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE3A.png" align="center"></td>
+		<td>Кот довольный</td>
+    </tr>
+	<tr>		
+		<td>f09f9988</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE48.png" align="center"></td>
+		<td>Обезьяна закрыла глаза</td>
+    </tr>
+		<tr>
+		<td>f09f9989</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE49.png" align="center"></td>
+		<td>Обезьяна открыла глаза</td>
+    </tr>
+	<tr>
+		<td>f09f998a</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE4A.png" align="center"></td>
+		<td>Обезьяна закрыла рот</td>
+    </tr>
+	<tr>
+		<td>f09f92a9</td>
+		<td><img src="https://vk.com/images/emoji/D83DDCA9.png" align="center"></td>
+		<td>Коричневый треугольник</td>
+    </tr>
+	<tr>
+		<td>f09f9280</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC80.png" align="center"></td>
+		<td>Череп</td>
+    </tr>
+	<tr>
+		<td>f09f91b9</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC79.png" align="center"></td>
+		<td>Чёртов помидор</td>
+    </tr>
+	<tr>
+		<td>f09f91ba</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC7A.png" align="center"></td>
+		<td>Злой красноморд</td>
+    </tr>
+	
+	
+	<tr>
+		<td>f09f918df09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4D.png" align="center"></td>
+		<td>Лайк</td>
+    </tr>
+	<tr>
+		<td>f09f918ef09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4E.png" align="center"></td>
+		<td>Дизлайк</td>
+    </tr>
+	<tr>
+		<td>e2989df09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/261D.png" align="center"></td>
+		<td>Между прочим</td>
+    </tr>
+	<tr>
+		<td>e29c8cf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/270C.png" align="center"></td>
+		<td>Ёу, бро</td>
+    </tr>
+	<tr>
+		<td>f09f918cf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4C.png" align="center"></td>
+		<td>Ок</td>
+    </tr>
+	<tr>
+		<td>f09f9695f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDD95D83CDFFB.png" align="center"></td>
+		<td>Послание в путь</td>
+    </tr>
+	<tr>
+		<td>f09fa498f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD18D83CDFFB.png" align="center"></td>
+		<td>Коза</td>
+    </tr>
+	<tr>
+		<td>f09f918ff09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4F.png" align="center"></td>
+		<td>Хлопок</td>
+    </tr>
+	<tr>
+		<td>f09f918af09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4A.png" align="center"></td>
+		<td>Удар</td>
+    </tr>
+	<tr>
+		<td>f09f92aaf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDCAA.png" align="center"></td>
+		<td>Бицепс</td>
+    </tr>
+	<tr>
+		<td>e29c8bf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/270B.png" align="center"></td>
+		<td>Стоп</td>
+    </tr>
+	<tr>
+		<td>f09f9690f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDD90D83CDFFB.png" align="center"></td>
+		<td>Растопырка</td>
+    </tr>
+	<tr>
+		<td>f09f9696f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDD96D83CDFFB.png" align="center"></td>
+		<td>Ножницы</td>
+    </tr>
+	<tr>
+		<td>f09f998ff09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE4F.png" align="center"></td>
+		<td>Молитва</td>
+    </tr>
+	<tr>
+		<td>f09f998cf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDE4C.png" align="center"></td>
+		<td>Магия рук</td>
+    </tr>
+	<tr>
+		<td>e29c8af09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/270A.png" align="center"></td>
+		<td>Сжатая ладонь</td>
+    </tr>
+	<tr>
+		<td>f09f9186f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC46.png" align="center"></td>
+		<td>Указание вверх</td>
+    </tr>
+	<tr>
+		<td>f09f9187f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC47.png" align="center"></td>
+		<td>Указание вниз</td>
+    </tr>
+	<tr>
+		<td>f09f9188f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC48.png" align="center"></td>
+		<td>Указание налево</td>
+    </tr>
+	<tr>
+		<td>f09f9189f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC49.png" align="center"></td>
+		<td>Указание направо</td>
+    </tr>
+	<tr>
+		<td>f09f918bf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC4B.png" align="center"></td>
+		<td>Рука вибрирует</td>
+    </tr>
+	<tr>
+		<td>f09f9190f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC50.png" align="center"></td>
+		<td>Ладони как крылья</td>
+    </tr>
+	<tr>
+		<td>f09fa49ef09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD1ED83CDFFB.png" align="center"></td>
+		<td>Скрещенные пальцы</td>
+    </tr>
+	<tr>
+		<td>f09fa49d</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD1D.png" align="center"></td>
+		<td>Рукопожатие</td>
+    </tr>
+	<tr>
+		<td>f09fa499f09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD19D83CDFFB.png" align="center"></td>
+		<td>Позвони мне</td>
+    </tr>
+	<tr>
+		<td>f09fa49bf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD1BD83CDFFB.png" align="center"></td>
+		<td>Хук справа</td>
+    </tr>
+	<tr>
+		<td>f09fa49cf09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/D83EDD1CD83CDFFB.png" align="center"></td>
+		<td>Хук слева</td>
+    </tr>
+	<tr>
+		<td>e29c8df09f8fbb</td>
+		<td><img src="https://vk.com/images/emoji/270D.png" align="center"></td>
+		<td>Пишущая рука</td>
+    </tr>
+	<tr>
+		<td>f09f9180</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC40.png" align="center"></td>
+		<td>Глаза</td>
+    </tr>
+	<tr>
+		<td>f09f9185</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC45.png" align="center"></td>
+		<td>Язык</td>
+    </tr>
+	<tr>
+		<td>e29880</td>
+		<td><img src="https://vk.com/images/emoji/2600.png" align="center"></td>
+		<td>Солнце</td>
+    </tr>
+	<tr>
+		<td>e29881</td>
+		<td><img src="https://vk.com/images/emoji/2601.png" align="center"></td>
+		<td>Облако</td>
+    </tr>
+		<tr>
+		<td>f09f92ad</td>
+		<td><img src="https://vk.com/emoji/e/f09f92ad.png" align="center"></td>
+		<td>Облако мыслей</td>
+    </tr>
+	<tr>
+		<td>e29d84</td>
+		<td><img src="https://vk.com/images/emoji/2744.png" align="center"></td>
+		<td>Снег</td>
+    </tr>
+	<tr>
+		<td>f09f9293</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC93.png" align="center"></td>
+		<td>Сердце кипит</td>
+    </tr>
+	<tr>
+		<td>f09f9294</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC94.png" align="center"></td>
+		<td>Сердце разбито</td>
+    </tr>
+	<tr>
+		<td>f09f9295</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC95.png" align="center"></td>
+		<td>Два сердца</td>
+    </tr>
+	<tr>
+		<td>f09f9296</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC96.png" align="center"></td>
+		<td>Сердце сверкает</td>
+    </tr>
+	<tr>
+		<td>f09f9297</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC97.png" align="center"></td>
+		<td>Сердце волнистое</td>
+    </tr>
+	<tr>
+		<td>f09f9298</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC98.png" align="center"></td>
+		<td>Сердце со стрелой</td>
+    </tr>
+	<tr>
+		<td>f09f929e</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC9E.png" align="center"></td>
+		<td>Сердца кружатся</td>
+    </tr>
+	<tr>
+		<td>f09f928c</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC8C.png" align="center"></td>
+		<td>Любовная записка</td>
+    </tr>
+	<tr>
+		<td>f09f9290</td>
+		<td><img src="https://vk.com/images/emoji/D83DDC90.png" align="center"></td>
+		<td>Букет цветов</td>
+    </tr>
+	<tr>
+		<td>f09f8cb7</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF37.png" align="center"></td>
+		<td>Тюльпан</td>
+    </tr>
+	<tr>
+		<td>f09f8cb9</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF39.png" align="center"></td>
+		<td>Роза</td>
+    </tr>
+	<tr>
+		<td>f09f8cba</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF3A.png" align="center"></td>
+		<td>Пион или фиалка или гибискус</td>
+    </tr>
+	<tr>
+		<td>f09f8cbc</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF3C.png" align="center"></td>
+		<td>Ромашка</td>
+    </tr>
+	<tr>
+		<td>e29895</td>
+		<td><img src="https://vk.com/images/emoji/2615.png" align="center"></td>
+		<td>Чашка чая</td>
+    </tr>
+	<tr>
+		<td>f09f8d94</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF54.png" align="center"></td>
+		<td>Бургер</td>
+    </tr>
+	<tr>
+		<td>f09f8daa</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF6A.png" align="center"></td>
+		<td>Печенье</td>
+    </tr>
+	<tr>
+		<td>f09f8dab</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF6B.png" align="center"></td>
+		<td>Шоколадка</td>
+    </tr>
+	<tr>
+		<td>f09f8db0</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF70.png" align="center"></td>
+		<td>Кусочек торта</td>
+    </tr>
+	<tr>
+		<td>f09f8e80</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF80.png" align="center"></td>
+		<td>Бантик</td>
+    </tr>
+	<tr>
+		<td>f09f8e81</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF81.png" align="center"></td>
+		<td>Подарок</td>
+    </tr>
+	<tr>
+		<td>f09f8e82</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF82.png" align="center"></td>
+		<td>Торт</td>
+    </tr>
+	<tr>
+		<td>f09f8e88</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF88.png" align="center"></td>
+		<td>Шарик</td>
+    </tr>
+	<tr>
+		<td>f09f8e89</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF89.png" align="center"></td>
+		<td>Конфетти</td>
+    </tr>
+	<tr>
+		<td>f09f8e8a</td>
+		<td><img src="https://vk.com/images/emoji/D83CDF8A.png" align="center"></td>
+		<td>Пиньята</td>
+    </tr>
+</table>
+
+
+<fieldset>
+    <legend>Коды остальных смайликов:</legend>
+    <label>
+		<p align="justify">
+		1. Если вы не нашли нужных смайликов, то в самом ВК жмём <b>ПКМ</b> (правой кнопкой мыши) <b>по инетересующему вас смайлику</b> (в диалогах, на стенах, в меню TAB) и выбираем последний пункт <b>"Посмотреть код"</b>.
+		<br>
+		2. У вас будет выделена строка такого плана: &lt;img class="emoji" src="/emoji/e/<b>f09f988f</b>.png" alt="😏"&gt;.
+		<br>
+		3. Отсюда нужно <b>скопировать</b> то, что перед ".png" (и после "/"), т.е. в данном случаем <b>f09f988f</b> - это код смайлика. 
+		<br>
+		4. <b>Вставляете</b> этот код в нужный вам слот и нажимаете кнопку <b>"СОХРАНИТЬ"</b>.
+		<br>
+		5. <b>Обновите страницу ВК</b>, чтобы увидеть изменения.
+		</p>
+	</label> 
+</fieldset>
+</div>
+
+
+<div class="content" id="checksss">
+<a id="new_options"></a>
+<p class="p1">
+<br>
+<input type="checkbox" checked id="showIdBar1"/><label for="showIdBar1">использовать цифровые клавиши "1 - 9" для печати смайликов</label>
+<br><i class="itext">(Комбинация клавиш <b class="b_green_class"> Alt + ё </b> или <b class="b_green_class">Ctrl + ё</b> в сообщениях, 
+<br> переключает с печати цифр на печать смайликов (Номер 1-9) и обратно.</i>
+<br><br>
+
+<input type="checkbox" checked id="showIdBar2"/><label for="showIdBar2">использовать доп. цифровые клавиши "Num 1 - Num 9" для печати смайликов</label>
+<br><i class="itext">(Комбинация клавиш <b class="b_blue_class"> Alt + Num 0 </b> или <b class="b_blue_class">Ctrl + Num 0</b> в сообщениях, 
+<br> переключает с печати доп. Num-цифр на печать смайликов (Номер 1-9) и обратно.</i>
+<br><br>
+
+<input type="checkbox" id="showBar"/><label for="showBar">cкрыть панель смайликов</label><i> (чтобы печатать смайлики только с клавиатуры)</i>
+<br><br>
+</p>
+<p class="fig_smilebar"><img src="keyboard620.png" width="620" alt="Фотография"></p>
+
+<div id="status3" class="savemessage"></div>
+</div>
+
+<div class="content">
+<a id="smart_icon"></a>
+<p class="fig_smilebar"><img src="icon_info.png" width="620" alt="Фотография"></p>
+
+</div>
+<div id="status2" class="savemessage">Всем успехов, любви и благополучия <img class="img_smile" src="https://vk.com/images/emoji/D83DDE0C.png" align="center"></div>
+<button id="reset" class="button15">сбросить настройки</button>
+
+
+<script src="options.js"></script>
+</body>
+</html>
