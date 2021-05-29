@@ -1,4 +1,3 @@
-
 // переключение иконок ========================================================
 
 function icon_change() {	 
@@ -9,9 +8,6 @@ function icon_change() {
 		keys1_on: false,
 		keys2_on: false
 	}, function(items) {
-		console.log('items.keys1', items.keys1);
-		console.log('items.keys2', items.keys2);
-		console.log('items.panelOff', items.panelOff);
 		var panelOff = items.panelOff;
 		var keys1_on =  items.keys1_on;
 		var keys2_on =  items.keys2_on;
@@ -22,28 +18,28 @@ function icon_change() {
 		
 		// если панель ВЫКЛЮЧЕНА - OFF
 		if (panelOff) {																		// OFF - black
-			console.log('не включена Панель -');
+			//console.log('не включена Панель -');
 			// включена ОБА  	// red
 			if ((keys1_on) && (keys2_on) && (keys1) && (keys2)) {							// red
-				console.log('включена ОБА +');
+				//console.log('включена ОБА +');
 				status = "☺ ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [218,64,22,255]});
 				chrome.browserAction.setIcon({ path : "2_black.png"	});				
 			}
 			if ((keys1_on) && (!keys2_on) && (keys1)) {										// green
-				console.log('включен левый +');	
+				//console.log('включен левый +');	
 				status = "☺    ";
 				chrome.browserAction.setBadgeBackgroundColor({color: [0,170,0,255]}); 		
 				chrome.browserAction.setIcon({ path : "2_black.png"	});
 			}
 			if ((!keys1_on) && (keys2_on) && (keys2)) {										// blue
-				console.log('включен правый +');	
+				//console.log('включен правый +');	
 				status = "    ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [10,133,230,255]}); 	
 				chrome.browserAction.setIcon({ path : "2_black.png"	});
 			}						
 			if ((!keys1_on) && (!keys2_on)) {												// main
-				console.log('выключены ОБА -');
+				//console.log('выключены ОБА -');
 				status = "";
 				chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255]}); 	
 				chrome.browserAction.setIcon({ path : "2_main.png"	});
@@ -51,27 +47,27 @@ function icon_change() {
 			
 		// если панель ВКЛЮЧЕНА - ON
 		} else if (!panelOff) {																// ON - color
-			console.log('включена Панель +');						
+			//console.log('включена Панель +');						
 			if ((keys1_on) && (keys2_on) && (keys1) && (keys2)) {							// red
-				console.log('включена ОБА +');
+				//console.log('включена ОБА +');
 				status = "☺ ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [218,64,22,255]});
 				chrome.browserAction.setIcon({ path : "1_red1.png"	});				
 			}
 			if ((keys1_on) && (!keys2_on) && (keys1)) {										// green
-				console.log('включен левый +');	
+				//console.log('включен левый +');	
 				status = "☺    ";
 				chrome.browserAction.setBadgeBackgroundColor({color: [0,170,0,255]}); 		
 				chrome.browserAction.setIcon({ path : "1_green.png"	});
 			}
 			if ((!keys1_on) && (keys2_on) && (keys2)) {										// blue
-				console.log('включен правый +');	
+				//console.log('включен правый +');	
 				status = "    ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [10,133,230,255]}); 	
 				chrome.browserAction.setIcon({ path : "1_blue.png"	});
 			}						
 			if ((!keys1_on) && (!keys2_on)) {												// main
-				console.log('выключены ОБА -');
+				//console.log('выключены ОБА -');
 				status = "";
 				chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255]}); 	
 				chrome.browserAction.setIcon({ path : "1_main.png"	});
@@ -84,11 +80,5 @@ function icon_change() {
 
 chrome.extension.onMessage.addListener(function(message, sender) {
 	icon_change();
-	/*
-	var status = "    ☺";
-    chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255], tabId: sender.tab.id}); 
-	chrome.browserAction.setBadgeText( { text: status } );
-	chrome.browserAction.setIcon({ path : "1_blue.png"	});
-	*/
-	console.log('onMessage = background');
+	//console.log('onMessage = background');
 });

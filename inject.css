@@ -1,8 +1,6 @@
 .emoji_smile_container{
-    //margin-bottom: -10px !important;
-	margin-top: -7px;
-    margin-bottom: 6px;
-    //margin-left: 61px;
+	margin-top: -10px;
+    margin-bottom: 7px;
 	margin-left: 9px;
 	color: #dee1e6;
 	text-align: center; 
@@ -10,11 +8,8 @@
 }
 
 .emoji_smile_container_infinity{
-    //margin-bottom: 0px !important;
 	margin-top: 0px;
     margin-bottom: 0px;
-    //margin-left: 61px;
-	// margin-left: 7px;
 	color: #dee1e6;
 	text-align: center; 
 }

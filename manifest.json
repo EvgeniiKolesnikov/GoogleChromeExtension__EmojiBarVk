@@ -1,7 +1,7 @@
 ﻿{
 	"manifest_version": 2,
 	"name": "Панель смайликов ВКонтакте (vk.com)",
-	"version": "1.7",
+	"version": "2.1",
 	"options_page": "options.html",
 	"background": {
 		"scripts": ["background.js"],

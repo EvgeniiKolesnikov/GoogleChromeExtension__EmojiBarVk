@@ -12,7 +12,7 @@ document.getElementById('showBar').addEventListener('click', save_showIdBar);
 
 function restore_options() {
   chrome.storage.sync.get({
-    x: 9,
+    x: 15,
 
 	kod1: 'f09f988a',
 	kod2: 'f09f988c',
@@ -26,7 +26,7 @@ function restore_options() {
 	kod10: 'e298ba',
 	kod11: 'f09f988f',
 	kod12: 'f09f989f',
-	kod13: 'f09f918df09f8fbb',
+	kod13: 'f09f9898',
 	kod14: 'f09fa497',
 	kod15: 'f09f9883',
 	
@@ -46,7 +46,24 @@ function restore_options() {
 	kod29: 'e29880',
 	kod30: 'e29d84',
 	
+	kod31: 'f09f918df09f8fbb',
+	kod32: 'f09f918ef09f8fbb',
+	kod33: 'e2989df09f8fbb',
+	kod34: 'e29c8cf09f8fbb',
+	kod35: 'f09f918cf09f8fbb',
+	kod36: 'f09f9695f09f8fbb',
+	kod37: 'f09fa498f09f8fbb',
+	kod38: 'f09f918ff09f8fbb',
+	kod39: 'f09f918af09f8fbb',
+	kod40: 'f09f92aaf09f8fbb',
+	kod41: 'e29c8bf09f8fbb',
+	kod42: 'f09f9690f09f8fbb',
+	kod43: 'f09f9696f09f8fbb',
+	kod44: 'f09f998ff09f8fbb',
+	kod45: 'f09f998cf09f8fbb',
+
 	kodLoad: 'load',
+	readed: true,
 	keys1: true,
 	keys2: true,
 	panelOff: false,
@@ -88,9 +105,29 @@ function restore_options() {
 	document.getElementById('smile29').value = items.kod29;
 	document.getElementById('smile30').value = items.kod30;
 	
+	document.getElementById('smile31').value = items.kod31;
+	document.getElementById('smile32').value = items.kod32;
+	document.getElementById('smile33').value = items.kod33;
+	document.getElementById('smile34').value = items.kod34;
+	document.getElementById('smile35').value = items.kod35;
+	document.getElementById('smile36').value = items.kod36;
+	document.getElementById('smile37').value = items.kod37;
+	document.getElementById('smile38').value = items.kod38;
+	document.getElementById('smile39').value = items.kod39;
+	document.getElementById('smile40').value = items.kod40;
+	document.getElementById('smile41').value = items.kod41;
+	document.getElementById('smile42').value = items.kod42;
+	document.getElementById('smile43').value = items.kod43;
+	document.getElementById('smile44').value = items.kod44;
+	document.getElementById('smile45').value = items.kod45;
+
 	document.getElementById('showIdBar1').checked = items.keys1;
 	document.getElementById('showIdBar2').checked = items.keys2;
 	document.getElementById('showBar').checked = items.panelOff;
+	
+	chrome.storage.sync.set({ 
+		readed: true
+	}); 
 	
 	// Проверка на старые коды 
 	var DS0 = document.getElementById('smile1').value.charAt(0);
@@ -139,6 +176,22 @@ function save_options() {
 	var kod_smile29 = document.getElementById('smile29').value;
 	var kod_smile30 = document.getElementById('smile30').value;
 	
+	var kod_smile31 = document.getElementById('smile31').value;
+	var kod_smile32 = document.getElementById('smile32').value;
+	var kod_smile33 = document.getElementById('smile33').value;
+	var kod_smile34 = document.getElementById('smile34').value;
+	var kod_smile35 = document.getElementById('smile35').value;
+	var kod_smile36 = document.getElementById('smile36').value;
+	var kod_smile37 = document.getElementById('smile37').value;
+	var kod_smile38 = document.getElementById('smile38').value;
+	var kod_smile39 = document.getElementById('smile39').value;
+	var kod_smile40 = document.getElementById('smile40').value;
+	var kod_smile41 = document.getElementById('smile41').value;
+	var kod_smile42 = document.getElementById('smile42').value;
+	var kod_smile43 = document.getElementById('smile43').value;
+	var kod_smile44 = document.getElementById('smile44').value;
+	var kod_smile45 = document.getElementById('smile45').value;
+
 	chrome.storage.sync.set({ 
 		x: likesxsmile, 
 		
@@ -172,7 +225,22 @@ function save_options() {
 		kod27: kod_smile27,
 		kod28: kod_smile28,
 		kod29: kod_smile29,
-		kod30: kod_smile30
+		kod30: kod_smile30,
+		kod31: kod_smile31,
+		kod32: kod_smile32,
+		kod33: kod_smile33,
+		kod34: kod_smile34,
+		kod35: kod_smile35,
+		kod36: kod_smile36,
+		kod37: kod_smile37,
+		kod38: kod_smile38,
+		kod39: kod_smile39,
+		kod40: kod_smile40,
+		kod41: kod_smile41,
+		kod42: kod_smile42,
+		kod43: kod_smile43,
+		kod44: kod_smile44,
+		kod45: kod_smile45
 		
 	}, function(items) {
 		var status = document.getElementById('status');
@@ -185,7 +253,6 @@ function save_options() {
 
 
 function save_showIdBar() {
-	console.log('сработало событие на нажатие чекбокса ');
     var what_keys1 = document.getElementById('showIdBar1').checked;
 	var what_keys2 = document.getElementById('showIdBar2').checked;
 	var what_panelOff = document.getElementById('showBar').checked;
@@ -218,16 +285,6 @@ window.onload = function() {
 	var timer= setInterval(function() {	
 		var real_x = document.getElementById('xsmile').value;  			// Количество смайликов
 		var table_x = document.getElementById('table_id');	
-		console.log('real_x = ', real_x);
-		/*
-		var table_trs = document.getElementById('table_id').getElementsByTagName("tr");  
-		var table_lenght = table_trs.length;
-		console.log('table_lenght = ', table_lenght);
-		console.log('table_trs = ', table_trs);
-		
-		console.log('table_x.rows[7].style.display = ', table_x.rows[7].style.display = "");
-		console.log('table_trs[8].style.display = ', table_trs[8].style.display = "");
-		*/
 		
 		OnOff_Rows(real_x, table_x);
 		
@@ -235,10 +292,9 @@ window.onload = function() {
 		smilebar.innerHTML = "";
 		
 		var i;
-		for (i = 1; i <= 30; i++) {
+		for (i = 1; i <= 45; i++) {
 			var skod = 'smile' + i;
 			var sid = document.getElementById(skod).value;
-			//console.log('sid = ', sid);
 			var simg = 'smile' + i +'img';
 			var simgid = document.getElementById(simg);
 			var shtml = 	  '<img src="https://vk.com/emoji/e/' + sid + '.png" class="smile_table"></a>';	
@@ -260,12 +316,9 @@ function OnOff_Rows(x, table_name) {
 	var x1 = Number(x)+2;
 	var x2 = table_name.rows.length-2;
 	for (i = x1; i <= x2; i++) {
-		//table_name.rows[2].style.display ;						// первая ячейка с кодами 	    	 2: первый смайлик 		(1)
-		//table_name.rows[table_x.rows.length-2].style.display;		// последняя ячейчка с кодами	    16: последний смайлик  (15)
 		table_name.rows[i].style.display = "none";
 	} 
-	//console.log('OFF cells = ', x1, x2);
-	
+
 	// Включение строк таблицы
 	var x3 = 2;
 	var x4 = Number(x)+1;
@@ -273,55 +326,10 @@ function OnOff_Rows(x, table_name) {
 		table_name.rows[i].style.display = "";
 		table_name.rows[i].style.display = "table_row";
 	}
-	//console.log('ON cells = ', x3, x4);
  }
  
-// иконки =================================================================================================
-
-function icomode() {	
-    status = "";                                     
-	//chrome.browserAction.setBadgeBackgroundColor({color: [203,0,0,255]});
-	//													    Red, Green, Blue, Alpha
-	if (current==1) {
-		status = "☺ ☺";
-		chrome.browserAction.setBadgeBackgroundColor({color: [222,222,0,255]});		//black 
-		chrome.browserAction.setIcon({ path : "2_black.png"	});
-	}
-	if (current==2) {
-		status = "☺ ☺";
-		chrome.browserAction.setBadgeBackgroundColor({color: [218,64,22,255]});		//red
-		chrome.browserAction.setIcon({ path : "1_red1.png"	});
-	}
-	if (current==3) {
-		status = "    ☺";
-		chrome.browserAction.setBadgeBackgroundColor({color: [10,133,230,255]}); 	// blue
-		chrome.browserAction.setIcon({ path : "1_blue.png"	});
-	}
-	if (current==4) {
-		status = "☺    ";
-		chrome.browserAction.setBadgeBackgroundColor({color: [0,170,0,255]}); 		// green
-		chrome.browserAction.setIcon({ path : "1_green.png"	});
-	}
-	if (current==5) {
-		status = "";
-		chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255]}); 	// white
-		chrome.browserAction.setIcon({ path : "1_main.png"	});
-	}
-	if (current==6) {
-		status = "";
-		chrome.browserAction.setBadgeBackgroundColor({color: [0,0,0,255]});			//black 
-		chrome.browserAction.setIcon({ path : "2_main.png"	});
-	}
-	chrome.browserAction.setBadgeText( { text: status } );
-	current++;
-	if (current > 6) {
-		current = 1;
-	}
-}
-
 
 // переключение иконок ========================================================
-
 function icon_change() {	 
 	chrome.storage.sync.get({
 		keys1: true,
@@ -330,9 +338,6 @@ function icon_change() {
 		keys1_on: false,
 		keys2_on: false
 	}, function(items) {
-		console.log('items.keys1', items.keys1);
-		console.log('items.keys2', items.keys2);
-		console.log('items.panelOff', items.panelOff);
 		var panelOff = items.panelOff;
 		var keys1_on =  items.keys1_on;
 		var keys2_on =  items.keys2_on;
@@ -343,29 +348,24 @@ function icon_change() {
 		
 		// если панель ВЫКЛЮЧЕНА - OFF
 		if (panelOff) {																		// OFF - black
-			console.log('не включена Панель -');
 			// включена ОБА  	// red
 			if ((keys1) && (keys2)) {							// red
-				console.log('включена ОБА +');
 				status = "☺ ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [218,64,22,255]});
 				chrome.browserAction.setIcon({ path : "2_black.png"	});		
 								
 			}
 			if ((keys1) && (!keys2)) {										// green
-				console.log('включен левый +');	
 				status = "☺    ";
 				chrome.browserAction.setBadgeBackgroundColor({color: [0,170,0,255]}); 		
 				chrome.browserAction.setIcon({ path : "2_black.png"	});
 			}
 			if ((!keys1) && (keys2)) {										// blue
-				console.log('включен правый +');	
 				status = "    ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [10,133,230,255]}); 	
 				chrome.browserAction.setIcon({ path : "2_black.png"	});
 			}						
 			if ((!keys1) && (!keys2)) {												// main
-				console.log('выключены ОБА -');
 				status = "";
 				chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255]}); 	
 				chrome.browserAction.setIcon({ path : "2_main.png"	});
@@ -378,28 +378,23 @@ function icon_change() {
 				status3.textContent = '';
 			}, 1750);
 		// если панель ВКЛЮЧЕНА - ON
-		} else if (!panelOff) {																// ON - color
-			console.log('включена Панель +');						
+		} else if (!panelOff) {																// ON - color				
 			if ((keys1) && (keys2)) {							// red
-				console.log('включена ОБА +');
 				status = "☺ ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [218,64,22,255]});
 				chrome.browserAction.setIcon({ path : "1_red1.png"	});				
 			}
-			if ((keys1) && (!keys2)) {										// green
-				console.log('включен левый +');	
+			if ((keys1) && (!keys2)) {										// green	
 				status = "☺    ";
 				chrome.browserAction.setBadgeBackgroundColor({color: [0,170,0,255]}); 		
 				chrome.browserAction.setIcon({ path : "1_green.png"	});
 			}
 			if ((!keys1) && (keys2)) {										// blue
-				console.log('включен правый +');	
 				status = "    ☺";
 				chrome.browserAction.setBadgeBackgroundColor({color: [10,133,230,255]}); 	
 				chrome.browserAction.setIcon({ path : "1_blue.png"	});
 			}						
 			if ((!keys1) && (!keys2)) {												// main
-				console.log('выключены ОБА -');
 				status = "";
 				chrome.browserAction.setBadgeBackgroundColor({color: [255,255,255,255]}); 	
 				chrome.browserAction.setIcon({ path : "1_main.png"	});
